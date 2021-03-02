@@ -84,7 +84,7 @@ fn compile_fail() {
     html! { </Child> };
     html! { <Child><Child></Child> };
     html! { <Child></Child><Child></Child> };
-    html! { <Child>{ "Not allowed" }</Child> };
+    html! { <Child>"Not allowed"</Child> };
 
     // trying to overwrite `children` on props which don't take any.
     html! {
@@ -95,7 +95,7 @@ fn compile_fail() {
 
     html! { <ChildContainer /> };
     html! { <ChildContainer></ChildContainer> };
-    html! { <ChildContainer>{ "Not allowed" }</ChildContainer> };
+    html! { <ChildContainer>"Not allowed"</ChildContainer> };
     html! { <ChildContainer><></></ChildContainer> };
     html! { <ChildContainer><other /></ChildContainer> };
 

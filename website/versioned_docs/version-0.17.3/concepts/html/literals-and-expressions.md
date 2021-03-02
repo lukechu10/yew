@@ -15,7 +15,7 @@ let text = "lorem ipsum";
 html!{
     <>
         <div>{text}</div>
-        <div>{"dolor sit"}</div>
+        <div>"dolor sit"</div>
         <span>{42}</span>
     </>
 }
@@ -31,7 +31,7 @@ html! {
     {
       if show_link {
         html! {
-          <a href="https://example.com">{"Link"}</a>
+          <a href="https://example.com">"Link"</a>
         }
       } else {
         html! {}
@@ -48,7 +48,7 @@ let show_link = true;
 let maybe_display_link = move || -> Html {
   if show_link {
     html! {
-      <a href="https://example.com">{"Link"}</a>
+      <a href="https://example.com">"Link"</a>
     }
   } else {
     html! {}

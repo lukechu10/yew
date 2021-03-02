@@ -55,14 +55,14 @@ impl Component for Model {
     fn view(&self) -> Html {
         html! {
             <div class="main">
-                <h1>{ "Node Refs Example" }</h1>
-                <p>{ "Refs can be used to access and manipulate DOM elements directly" }</p>
+                <h1>"Node Refs Example"</h1>
+                <p>"Refs can be used to access and manipulate DOM elements directly"</p>
                 <ul>
-                    <li>{ "First input will focus on mount" }</li>
-                    <li>{ "Each input will focus on hover" }</li>
+                    <li>"First input will focus on mount"</li>
+                    <li>"Each input will focus on hover"</li>
                 </ul>
                 <div>
-                    <label>{ "Using tag ref: " }</label>
+                    <label>"Using tag ref: "</label>
                     <input
                         type="text"
                         ref=self.refs[0].clone()
@@ -71,7 +71,7 @@ impl Component for Model {
                     />
                 </div>
                 <div>
-                    <label>{ "Using component ref: " }</label>
+                    <label>"Using component ref: "</label>
                     <InputComponent
                         ref=self.refs[1].clone()
                         on_hover=self.link.callback(|_| Msg::HoverIndex(1))

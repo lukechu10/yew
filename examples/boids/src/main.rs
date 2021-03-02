@@ -72,7 +72,7 @@ impl Component for Model {
 
         html! {
             <>
-                <h1 class="title">{ "Boids" }</h1>
+                <h1 class="title">"Boids"</h1>
                 <Simulation settings=settings.clone() generation=generation paused=paused />
                 { self.view_panel() }
             </>
@@ -88,8 +88,8 @@ impl Model {
                 { self.view_settings() }
                 <div class="panel__buttons">
                     <button onclick=link.callback(|_| Msg::TogglePause)>{ pause_text }</button>
-                    <button onclick=link.callback(|_| Msg::ResetSettings)>{ "Use Defaults" }</button>
-                    <button onclick=link.callback(|_| Msg::RestartSimulation)>{ "Restart" }</button>
+                    <button onclick=link.callback(|_| Msg::ResetSettings)>"Use Defaults"</button>
+                    <button onclick=link.callback(|_| Msg::RestartSimulation)>"Restart"</button>
                 </div>
             </div>
         }

@@ -74,7 +74,7 @@ impl Component for Model {
         html! {
             <div>
                 <div>
-                    <p>{ "Choose a file to upload to see the uploaded bytes" }</p>
+                    <p>"Choose a file to upload to see the uploaded bytes"</p>
                     <input type="file" multiple=true onchange=self.link.callback(move |value| {
                             let mut result = Vec::new();
                             if let ChangeData::Files(files) = value {
@@ -89,7 +89,7 @@ impl Component for Model {
                     />
                 </div>
                 <div>
-                    <label>{ "By chunks" }</label>
+                    <label>"By chunks"</label>
                     <input type="checkbox" checked=flag onclick=self.link.callback(|_| Msg::ToggleByChunks) />
                 </div>
                 <ul>

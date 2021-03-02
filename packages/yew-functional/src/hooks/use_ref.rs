@@ -41,7 +41,7 @@ use std::rc::Rc;
 ///     html! {
 ///         <div>
 ///             <input onchange=onchange value=message />
-///             <button onclick=onclick>{ "Send" }</button>
+///             <button onclick=onclick>"Send"</button>
 ///         </div>
 ///     }
 /// }

@@ -29,8 +29,8 @@ Components can be passed children if they have a `children` field in their `Prop
 ```rust title="parent.rs"
 html! {
     <Container id="container">
-        <h4>{ "Hi" }</h4>
-        <div>{ "Hello" }</div>
+        <h4>"Hi"</h4>
+        <div>"Hello"</div>
     </Container>
 }
 ```
@@ -45,7 +45,7 @@ let props = yew::props!(Container::Properties {
 html! {
     <Container with props>
         // props.children will be overwritten with this
-        <span>{ "I am a child, as you can see" }</span>
+        <span>"I am a child, as you can see"</span>
     </Container>
 }
 ```

@@ -538,15 +538,15 @@ mod tests {
     #[test]
     fn it_compares_text() {
         let a = html! {
-            <div>{ "correct" }</div>
+            <div>"correct"</div>
         };
 
         let b = html! {
-            <div>{ "correct" }</div>
+            <div>"correct"</div>
         };
 
         let c = html! {
-            <div>{ "incorrect" }</div>
+            <div>"incorrect"</div>
         };
 
         assert_eq!(a, b);

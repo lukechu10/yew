@@ -49,9 +49,9 @@ fn state() -> Html {
 
     html! {
         <div>
-            <button onclick=onclick>{ "Increment value" }</button>
+            <button onclick=onclick>"Increment value"</button>
             <p>
-                <b>{ "Current value: " }</b>
+                <b>"Current value: "</b>
                 { counter }
             </p>
         </div>
@@ -94,7 +94,7 @@ fn ref_hook() -> Html {
     html! {
         <div>
             <input onchange=onchange value=message />
-            <button onclick=onclick>{ "Send" }</button>
+            <button onclick=onclick>"Send"</button>
         </div>
     }
 }
@@ -156,8 +156,8 @@ fn reducer() -> Html {
         <>
             <div id="result">{ counter.counter }</div>
 
-            <button onclick=double_onclick>{ "Double" }</button>
-            <button onclick=square_onclick>{ "Square" }</button>
+            <button onclick=double_onclick>"Double"</button>
+            <button onclick=square_onclick>"Square"</button>
         </>
     }
 }
@@ -254,8 +254,8 @@ html! {
 // Navbar component
 html! {
     <div>
-        <Title theme=theme>{ "App title" }<Title>
-        <NavButton theme=theme>{ "Somewhere" }</NavButton>
+        <Title theme=theme>"App title"<Title>
+        <NavButton theme=theme>"Somewhere"</NavButton>
     </div>
 }
 ```

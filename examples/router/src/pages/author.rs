@@ -46,7 +46,7 @@ impl Component for Author {
                     <div class="tile">
                         <div class="tile is-parent is-3">
                             <article class="tile is-child notification">
-                                <p class="title">{ "Interests" }</p>
+                                <p class="title">"Interests"</p>
                                 <div class="tags">
                                     { for author.keywords.iter().map(|tag| html! { <span class="tag is-info">{ tag }</span> }) }
                                 </div>
@@ -60,7 +60,7 @@ impl Component for Author {
                         <div class="tile is-parent">
                             <article class="tile is-child notification is-info">
                                 <div class="content">
-                                    <p class="title">{ "About me" }</p>
+                                    <p class="title">"About me"</p>
                                     <div class="content">
                                         { "This author has chosen not to reveal anything about themselves" }
                                     </div>

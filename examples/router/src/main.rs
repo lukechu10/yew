@@ -60,11 +60,11 @@ impl Component for Model {
                 <footer class="footer">
                     <div class="content has-text-centered">
                         { "Powered by " }
-                        <a href="https://yew.rs">{ "Yew" }</a>
+                        <a href="https://yew.rs">"Yew"</a>
                         { " using " }
-                        <a href="https://bulma.io">{ "Bulma" }</a>
+                        <a href="https://bulma.io">"Bulma"</a>
                         { " and images from " }
-                        <a href="https://unsplash.com">{ "Unsplash" }</a>
+                        <a href="https://unsplash.com">"Unsplash"</a>
                     </div>
                 </footer>
             </>
@@ -84,7 +84,7 @@ impl Model {
         html! {
             <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <h1 class="navbar-item is-size-3">{ "Yew Blog" }</h1>
+                    <h1 class="navbar-item is-size-3">"Yew Blog"</h1>
 
                     <a role="button"
                         class=classes!("navbar-burger", "burger", active_class)

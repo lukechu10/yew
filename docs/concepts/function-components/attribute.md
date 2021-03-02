@@ -30,7 +30,7 @@ pub struct RenderedAtProps {
 pub fn rendered_at(props: &RenderedAtProps) -> Html {
     html! {
         <p>
-            <b>{ "Rendered at: " }</b>
+            <b>"Rendered at: "</b>
             { &props.time }
         </p>
     }
@@ -51,9 +51,9 @@ fn app() -> Html {
 
     html! {
         <div>
-            <button onclick=onclick>{ "Increment value" }</button>
+            <button onclick=onclick>"Increment value"</button>
             <p>
-                <b>{ "Current value: " }</b>
+                <b>"Current value: "</b>
                 { counter }
             </p>
         </div>

@@ -131,7 +131,7 @@ impl FetchServiceExample {
             Some(ref space_station) => {
                 html! {
                     <>
-                        <p>{ "The ISS is at:" }</p>
+                        <p>"The ISS is at:"</p>
                         <p>{ format!("Latitude: {}", space_station.iss_position.latitude) }</p>
                         <p>{ format!("Longitude: {}", space_station.iss_position.longitude) }</p>
                     </>
@@ -148,7 +148,7 @@ impl FetchServiceExample {
     }
     fn view_fetching(&self) -> Html {
         if self.fetch_task.is_some() {
-            html! { <p>{ "Fetching data..." }</p> }
+            html! { <p>"Fetching data..."</p> }
         } else {
             html! { <p></p> }
         }

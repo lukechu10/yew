@@ -27,8 +27,8 @@ use std::fmt;
 ///#     fn view(&self) -> Html {
 /// html! {
 ///     <Wrapper>
-///         <h4>{ "Hi" }</h4>
-///         <div>{ "Hello" }</div>
+///         <h4>"Hi"</h4>
+///         <div>"Hello"</div>
 ///     </Wrapper>
 /// }
 ///#     }

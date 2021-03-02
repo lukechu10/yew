@@ -1061,9 +1061,9 @@ mod layout_tests_keys {
                 name: "Reverse VComp children with children - before",
                 node: html! {
                     <>
-                        <List key="comp-1"><p>{"11"}</p><p>{"12"}</p></List>
-                        <List key="comp-2"><p>{"21"}</p><p>{"22"}</p></List>
-                        <List key="comp-3"><p>{"31"}</p><p>{"32"}</p></List>
+                        <List key="comp-1"><p>"11"</p><p>"12"</p></List>
+                        <List key="comp-2"><p>"21"</p><p>"22"</p></List>
+                        <List key="comp-3"><p>"31"</p><p>"32"</p></List>
                     </>
                 },
                 expected: "<p>11</p><p>12</p><p>21</p><p>22</p><p>31</p><p>32</p>",
@@ -1072,9 +1072,9 @@ mod layout_tests_keys {
                 name: "Reverse VComp children with children - after",
                 node: html! {
                     <>
-                        <List key="comp-3"><p>{"31"}</p><p>{"32"}</p></List>
-                        <List key="comp-2"><p>{"21"}</p><p>{"22"}</p></List>
-                        <List key="comp-1"><p>{"11"}</p><p>{"12"}</p></List>
+                        <List key="comp-3"><p>"31"</p><p>"32"</p></List>
+                        <List key="comp-2"><p>"21"</p><p>"22"</p></List>
+                        <List key="comp-1"><p>"11"</p><p>"12"</p></List>
                     </>
                 },
                 expected: "<p>31</p><p>32</p><p>21</p><p>22</p><p>11</p><p>12</p>",
@@ -1100,7 +1100,7 @@ mod layout_tests_keys {
                             <Comp id=1 />
                         </List>
                         <List key="comp-2">
-                            <p>{"2"}</p>
+                            <p>"2"</p>
                         </List>
                     </List>
                 },
@@ -1113,12 +1113,12 @@ mod layout_tests_keys {
                 name: "Reorder VComp children with children - before",
                 node: html! {
                     <>
-                        <List key="comp-1"><p>{"1"}</p></List>
-                        <List key="comp-3"><p>{"3"}</p></List>
-                        <List key="comp-5"><p>{"5"}</p></List>
-                        <List key="comp-2"><p>{"2"}</p></List>
-                        <List key="comp-4"><p>{"4"}</p></List>
-                        <List key="comp-6"><p>{"6"}</p></List>
+                        <List key="comp-1"><p>"1"</p></List>
+                        <List key="comp-3"><p>"3"</p></List>
+                        <List key="comp-5"><p>"5"</p></List>
+                        <List key="comp-2"><p>"2"</p></List>
+                        <List key="comp-4"><p>"4"</p></List>
+                        <List key="comp-6"><p>"6"</p></List>
                     </>
                 },
                 expected: "<p>1</p><p>3</p><p>5</p><p>2</p><p>4</p><p>6</p>",
@@ -1144,9 +1144,9 @@ mod layout_tests_keys {
                 name: "Replace and reorder components - before",
                 node: html! {
                     <List>
-                        <List key="comp-1"><p>{"1"}</p></List>
-                        <List key="comp-2"><p>{"2"}</p></List>
-                        <List key="comp-3"><p>{"3"}</p></List>
+                        <List key="comp-1"><p>"1"</p></List>
+                        <List key="comp-2"><p>"2"</p></List>
+                        <List key="comp-3"><p>"3"</p></List>
                     </List>
                 },
                 expected: "<p>1</p><p>2</p><p>3</p>",

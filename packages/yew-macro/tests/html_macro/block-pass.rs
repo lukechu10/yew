@@ -1,7 +1,7 @@
 #![no_implicit_prelude]
 
 fn main() {
-    ::yew::html! { <>{ "Hi" }</> };
+    ::yew::html! { <>"Hi"</> };
     ::yew::html! { <>{ ::std::format!("Hello") }</> };
     ::yew::html! { <>{ ::std::string::ToString::to_string("Hello") }</> };
 

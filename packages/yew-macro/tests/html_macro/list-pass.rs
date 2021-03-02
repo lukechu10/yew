@@ -15,8 +15,8 @@ fn main() {
     };
 
     let children = ::std::vec![
-        ::yew::html! { <span>{ "Hello" }</span> },
-        ::yew::html! { <span>{ "World" }</span> },
+        ::yew::html! { <span>"Hello"</span> },
+        ::yew::html! { <span>"World"</span> },
     ];
     ::yew::html! { <>{ children }</> };
 }

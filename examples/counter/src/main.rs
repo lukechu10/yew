@@ -54,11 +54,11 @@ impl Component for Model {
                     </button>
                 </nav>
                 <p>
-                    <b>{ "Current value: " }</b>
+                    <b>"Current value: "</b>
                     { self.value }
                 </p>
                 <p>
-                    <b>{ "Rendered at: " }</b>
+                    <b>"Rendered at: "</b>
                     { String::from(Date::new_0().to_string()) }
                 </p>
             </div>

@@ -192,18 +192,18 @@ impl Component for Model {
                 <section class="game-container">
                     <header class="app-header">
                         <img src="favicon.ico" class="app-logo"/>
-                        <h1 class="app-title">{ "Game of Life" }</h1>
+                        <h1 class="app-title">"Game of Life"</h1>
                     </header>
                     <section class="game-area">
                         <div class="game-of-life">
                             { for cell_rows }
                         </div>
                         <div class="game-buttons">
-                            <button class="game-button" onclick=self.link.callback(|_| Msg::Random)>{ "Random" }</button>
-                            <button class="game-button" onclick=self.link.callback(|_| Msg::Step)>{ "Step" }</button>
-                            <button class="game-button" onclick=self.link.callback(|_| Msg::Start)>{ "Start" }</button>
-                            <button class="game-button" onclick=self.link.callback(|_| Msg::Stop)>{ "Stop" }</button>
-                            <button class="game-button" onclick=self.link.callback(|_| Msg::Reset)>{ "Reset" }</button>
+                            <button class="game-button" onclick=self.link.callback(|_| Msg::Random)>"Random"</button>
+                            <button class="game-button" onclick=self.link.callback(|_| Msg::Step)>"Step"</button>
+                            <button class="game-button" onclick=self.link.callback(|_| Msg::Start)>"Start"</button>
+                            <button class="game-button" onclick=self.link.callback(|_| Msg::Stop)>"Stop"</button>
+                            <button class="game-button" onclick=self.link.callback(|_| Msg::Reset)>"Reset"</button>
                         </div>
                     </section>
                 </section>
@@ -211,7 +211,7 @@ impl Component for Model {
                     <strong class="footer-text">
                       { "Game of Life - a yew experiment " }
                     </strong>
-                    <a href="https://github.com/yewstack/yew" target="_blank">{ "source" }</a>
+                    <a href="https://github.com/yewstack/yew" target="_blank">"source"</a>
                 </footer>
             </div>
         }

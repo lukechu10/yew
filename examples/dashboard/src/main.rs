@@ -66,7 +66,7 @@ impl Model {
             }
         } else {
             html! {
-                <p>{ "Data hasn't fetched yet." }</p>
+                <p>"Data hasn't fetched yet."</p>
             }
         }
     }

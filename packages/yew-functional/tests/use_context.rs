@@ -44,18 +44,18 @@ fn use_context_scoping_works() {
             return html! {
                 <div>
                     <ExampleContextProvider context=ExampleContext("wrong1".into())>
-                        <div>{"ignored"}</div>
+                        <div>"ignored"</div>
                     </ExampleContextProvider>
                     <ExampleContextProvider context=ExampleContext("wrong2".into())>
                         <ExampleContextProvider context=ExampleContext("correct".into())>
                             <ExampleContextProvider context=ExampleContext("wrong1".into())>
-                                <div>{"ignored"}</div>
+                                <div>"ignored"</div>
                             </ExampleContextProvider>
                             <UseContextComponentInner />
                         </ExampleContextProvider>
                     </ExampleContextProvider>
                     <ExampleContextProvider context=ExampleContext("wrong3".into())>
-                        <div>{"ignored"}</div>
+                        <div>"ignored"</div>
                     </ExampleContextProvider>
                     <ExpectNoContextComponent />
                 </div>

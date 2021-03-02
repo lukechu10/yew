@@ -64,7 +64,7 @@ fn use_effect_destroys_on_component_drop() {
                 };
             } else {
                 return html! {
-                    <div>{"EMPTY"}</div>
+                    <div>"EMPTY"</div>
                 };
             }
         }

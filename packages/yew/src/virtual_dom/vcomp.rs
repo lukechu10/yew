@@ -640,7 +640,7 @@ mod layout_tests {
             name: "4",
             node: html! {
                 <Comp<B>>
-                    <Comp<A>>{"A"}</Comp<A>>
+                    <Comp<A>>"A"</Comp<A>>
                     {"B"}
                 </Comp<B>>
             },

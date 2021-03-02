@@ -31,8 +31,8 @@ html!{
 ```rust
 html! {
     <Container>
-        <h4>{ "Hi" }</h4>
-        <div>{ "Hello" }</div>
+        <h4>"Hi"</h4>
+        <div>"Hello"</div>
     </Container>
 }
 ```

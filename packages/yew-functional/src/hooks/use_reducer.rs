@@ -53,8 +53,8 @@ use std::rc::Rc;
 ///         <>
 ///             <div id="result">{ counter.counter }</div>
 ///
-///             <button onclick=double_onclick>{ "Double" }</button>
-///             <button onclick=square_onclick>{ "Square" }</button>
+///             <button onclick=double_onclick>"Double"</button>
+///             <button onclick=square_onclick>"Square"</button>
 ///         </>
 ///     }
 /// }
@@ -99,7 +99,7 @@ where
 ///         <>
 ///             <div id="result">{counter.counter}</div>
 ///
-///             <button onclick=Callback::from(move |_| dispatch(10))>{"Increment by 10"}</button>
+///             <button onclick=Callback::from(move |_| dispatch(10))>"Increment by 10"</button>
 ///         </>
 ///     }
 /// }

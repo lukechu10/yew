@@ -16,7 +16,7 @@ fn html_macro() {
 fn dynamic_tags_catch_void_elements() {
     html! {
         <@{"br"}>
-            <span>{ "No children allowed" }</span>
+            <span>"No children allowed"</span>
         </@>
     };
 }

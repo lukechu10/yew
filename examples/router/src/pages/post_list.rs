@@ -55,8 +55,8 @@ impl Component for PostList {
 
         html! {
             <div class="section container">
-                <h1 class="title">{ "Posts" }</h1>
-                <h2 class="subtitle">{ "All of our quality writing in one place" }</h2>
+                <h1 class="title">"Posts"</h1>
+                <h2 class="subtitle">"All of our quality writing in one place"</h2>
                 { self.view_posts() }
                 <Pagination
                     page=page

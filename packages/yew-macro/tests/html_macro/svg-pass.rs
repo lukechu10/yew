@@ -8,7 +8,7 @@ fn main() {
             <svg class="bi" fill="currentColor">
                 <use href="/bootstrap-icons.svg#wrench"/>
             </svg>
-            <span>{"Go to example.org"}</span>
+            <span>"Go to example.org"</span>
         </a>
     };
 

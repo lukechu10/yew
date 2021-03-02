@@ -30,8 +30,8 @@ Components can be passed children if they have a `children` field in their `Prop
 ```rust title="parent.rs"
 html! {
     <Container>
-        <h4>{ "Hi" }</h4>
-        <div>{ "Hello" }</div>
+        <h4>"Hi"</h4>
+        <div>"Hello"</div>
     </Container>
 }
 ```

@@ -131,7 +131,7 @@ impl Component for Model {
             <div class="todomvc-wrapper">
                 <section class="todoapp">
                     <header class="header">
-                        <h1>{ "todos" }</h1>
+                        <h1>"todos"</h1>
                         { self.view_input() }
                     </header>
                     <section class=classes!("main", hidden_class)>
@@ -161,9 +161,9 @@ impl Component for Model {
                     </footer>
                 </section>
                 <footer class="info">
-                    <p>{ "Double-click to edit a todo" }</p>
-                    <p>{ "Written by " }<a href="https://github.com/DenisKolodin/" target="_blank">{ "Denis Kolodin" }</a></p>
-                    <p>{ "Part of " }<a href="http://todomvc.com/" target="_blank">{ "TodoMVC" }</a></p>
+                    <p>"Double-click to edit a todo"</p>
+                    <p>"Written by "<a href="https://github.com/DenisKolodin/" target="_blank">"Denis Kolodin"</a></p>
+                    <p>"Part of "<a href="http://todomvc.com/" target="_blank">"TodoMVC"</a></p>
                 </footer>
             </div>
         }
